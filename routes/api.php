@@ -27,7 +27,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::get('/res',[ReservaControlador::class,'consultarReserva'])->name('reservaJSON');
 
 //mostramos en React las reservas disponibles 
-Route::get('/reservasDis',[ReservaControlador::class,'reservasDisponibles']);
+Route::get('/reservasDisppp',[ReservaControlador::class,'reservasDisponibles']);
 
 //datos de las reservas de un usuario
 Route::get('/misReservas',[ReservaControlador::class,'misReservas']);
