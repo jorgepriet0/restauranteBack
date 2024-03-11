@@ -24,7 +24,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 //Correspondientes rutas get, post, put y delete hacia el controlador ReservaControlador
 //con métodos a los que accederá y tratará Postman 
-Route::get('/reservas',[ReservaControlador::class,'consultarReserva'])->name('reservaJSON');
+Route::get('/res',[ReservaControlador::class,'consultarReserva'])->name('reservaJSON');
 
 //mostramos en React las reservas disponibles 
 Route::get('/reservasDisponibles',[ReservaControlador::class,'reservasDisponibles']);
