@@ -58,6 +58,7 @@ class ReservaControlador extends Controller
      */
     public function reservaUsuario(Request $request)
     {
+        //PRUEBA COMMIT REALIZADO
         $data = $request->all();
         $token = PersonalAccessToken::findToken($data["token"]);
 
